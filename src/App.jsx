@@ -3,6 +3,7 @@ import Navbar from './components/navbar/navbar'
 import Hero from './components/hero/hero';
 import "./app.scss"
 import { useEffect } from 'react';
+import Parallax from './components/parallax/parallax';
 
 
 function App() {
@@ -16,9 +17,13 @@ function App() {
       <Navbar/>
       <Hero/>
      </section>
-     <section id='Experience'>Parallax</section>
+     <section id='Experience'>
+      <Parallax type="Experience"/>
+     </section>
      <section>Experience</section>
-     <section id='Projects'>Parallax</section>
+     <section id='Projects'>
+      <Parallax type="portfolio"/>
+     </section>
      <section>Portfolio</section>
      <section>portfolio2</section>
      <section>portfolio3</section>

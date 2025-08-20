@@ -4,7 +4,7 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-   
+    
   
     .wrapper{
         max-width: 1366px;
@@ -25,24 +25,32 @@
             h2{
                 font-style: 30px;
                 color: rebeccapurple;
-                letter-spacing: 10px;
+                letter-spacing: 10px; pointer-events: none;
             }
 
             h1{
                 font-size: 88px;
+                pointer-events: none;
 
             }
 
             .btns{
+                
                 button{
                     padding: 20px;
                     border:1px solid white ;
                     border-radius: 10px;
                     background-color: transparent;
                     margin-right: 20px;
-                    cursor: pointer;
-                    font-weight: 300;
+                    
+                    font-weight: bold;
                     color: white;
+                    cursor: pointer ;
+                }
+                #btn2{
+                    color: rebeccapurple;
+                    background-color: white;
+                    
                 }
             }
             img{
@@ -60,5 +68,18 @@
         img{
         // border: 2px solid white;
         }
+    }
+
+    .slidingtext{
+        position: absolute;
+        font-size: 50vh;
+        bottom: -100px;
+        white-space: nowrap;
+        color: #ffffff09;
+        width: 200%;
+        font-weight: bold;
+        
+        pointer-events: none;
+
     }
 }
